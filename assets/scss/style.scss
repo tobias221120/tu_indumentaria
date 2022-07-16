@@ -1,0 +1,164 @@
+@import "variables";
+*{  margin: 0px;
+    padding: 0;
+    box-sizing:0px ;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    width: 70%;
+    color:black;
+   background-color: rgb(255, 255, 255);;
+}
+.header{
+   
+    height: 40px;
+    border-bottom: 1px solid rgb(185, 126, 126);
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+
+    }
+
+
+.header .cuenta{
+    position: relative;
+    top:10px;
+    text-align:end;
+    width: 70%;
+
+}
+.header .cuenta a{
+    text-decoration:none ;
+}
+.logopizza{
+height: 60px; 
+width: 70px;
+}
+
+.nav-link{ 
+    margin-left: 25px;
+    color: rgb(0, 0, 0);
+}
+.nav-link:hover{
+    color: coral;
+}
+
+.footer{
+  position:absolute;
+  margin-top:20px ;
+  border-top:1px solid rgb(185, 126, 126); ;
+  width: 72%; ;
+}
+
+.footer-icono div a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.footer-icono {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.targetas{ 
+    display: flex;
+    justify-content: center;
+
+}
+.card{ 
+   
+    width: 400px;
+    position: relative;
+}
+.card-title{
+    top:map-get($card-title,top);
+    position:map-get($card-title,position);
+    right:map-get($card-title,right);
+    font-size:map-get($card-title,font-size);
+    color:map-get($card-title,color);
+}
+
+.card-img{
+    height: 530px;
+}
+.targetas .card .link .card-title:hover{
+    
+    font-size:45px ;
+    position:absolute ;
+    right: 30%;
+}
+.credito-img{
+    padding:2px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+
+/* hasta aca andda bien el menu*/
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    }
+  .grid  article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  }
+  .grid  article img {
+    max-width: 100%;
+  }
+  .text {
+    padding: 0 20px 20px;
+  }
+   .text button {
+   background-color: coral;
+    border-radius: 4px;
+    padding: 2px;
+    width: 100%;
+    font-size: 15px;
+
+    }
+    article{
+        width: 188px;
+    }
+    /* galeria de prodcto main*/
+
+   
+ .ppp{
+    border: 1px solid #ccc;
+    width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 5px;
+ }
+ .ppp:hover{
+    box-shadow: 3px 3px 6px 3px  rgba(0,0,0,0.3);
+ }
+ .imm{
+        position: relative;
+    right:12px;
+    width:300px;
+ }
+.vans{
+   
+    border-bottom:1px solid rgb(104, 96, 96);
+    margin: 5px;
+   @extend .producto; 
+   
+}
+ .producto{
+    text-align: center;
+}
+.titulo, .conteiner-form {
+    display: flex;
+    justify-content: center; }
+  
+  .texto {
+    color: #000000;
+    font-size: 20px;
+    padding-left: 10px; }
+
+    .text .btn{
+        margin: 15px;
+    }
